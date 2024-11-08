@@ -39,7 +39,7 @@ download_episode() {
 
 # Select series
 echo "Available series:"
-series_list=$(jq -r 'keys[]' "$URLS_FILE")
+series_list=$(jq -r 'to_entries[] |.key' "$URLS_FILE")
 select_series=()
 index=1
 for series in $series_list; do
