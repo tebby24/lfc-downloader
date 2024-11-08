@@ -1,7 +1,7 @@
 # lfc-downloader
 
 ## Overview
-`lfc-downloader` is a script to download video and subtitles from Little Fox Chinese. The script uses `ffmpeg` to download videos and `jq` to parse JSON data.
+`lfc-downloader` is a script to download video and subtitles from Little Fox Chinese. The script uses `ffmpeg` to download videos and `jq` to parse JSON data. The script doesn't actually do any scraping, as all the relevant urls and subtitle files have already been scraped and placed into `/data`.
 
 ## Dependencies
 - `ffmpeg`
