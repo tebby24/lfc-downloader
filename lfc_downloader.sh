@@ -77,8 +77,10 @@ else
 fi
 
 # Output directory
-read -p "Enter output directory (default: ~/Downloads): " output_dir
-output_dir="${output_dir:-$HOME/Downloads}"
+read -p "Enter output directory (default: ~/Downloads/lfc): " output_dir
+# Default to ~/Downloads/lfc if the user presses enter
+output_dir="${output_dir:-$HOME/Downloads/lfc}"
+# Create the series directory under the chosen output root
 mkdir -p "$output_dir/$series"
 
 # Download selected episodes
