@@ -12,6 +12,8 @@
 ### Clone the Repository
 ```sh
 git clone https://github.com/tebby24/lfc-downloader.git
+```
+```sh
 cd lfc-downloader
 ```
 
