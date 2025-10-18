@@ -25,17 +25,16 @@ bash lfc_downloader.sh
 ```
 
 ### Instructions
-1. **Select Series**: The script will display a list of available series. Enter the number corresponding to the series you want to download.
-2. **Select Episodes**: You will be prompted to enter the episode numbers to download. You can specify individual episodes (e.g., `1`), a comma-separated list (e.g., `1,3,5`), a range (e.g., `1-3`), or leave it blank to download all episodes.
-3. **Select Output Directory**: You will be prompted to enter the output directory where the downloaded episodes will be saved. If you leave it blank, the default directory will be `~/Downloads/lfc`.
+Run the script and follow the prompts
 
-By default the script will create a per-series folder under the `lfc` root. Example layout when using the default:
+- Series selection: enter numbers using a single (`1`), comma list (`1,3,5`), range (`1-3`), or leave blank to select all series.
+	- If you select exactly one series, you'll be prompted to choose episodes (same syntax).
+	- If you select multiple series (or leave blank), the script downloads all episodes for each selected series.
+- Output directory: enter a path or press Enter to use the default `~/Downloads/lfc`.
+
+Files are saved like:
 
 ```
 ~/Downloads/lfc/{series}/{episode_title}/{episode_title}.mp4
-~/Downloads/lfc/{series}/{episode_title}/{episode_title}.srt   # if subtitle is available
+~/Downloads/lfc/{series}/{episode_title}/{episode_title}.srt 
 ```
-
-If you prefer a different output location, enter a custom path when prompted and the script will create `{custom-path}/{series}`.
-
-The script will then download the selected episodes and their corresponding subtitles (if available) to the specified output directory.
